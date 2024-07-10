@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style: none;
+   
+}
+
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header-nav-logo {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.header-list {
+    display: flex;
+    gap: 15px;
+    
+    
+}
+
+.header-list-link {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    text-align: right;
+    color: #3a3838;
+    transition: 300ms;
+    
+    
+}
+
+.header-list-link:hover {
+    color: #ef4423;
+}
+
+.header-pic {
+    background: url(../images/header-content-img.jpg) no-repeat center ;
+    max-width: 1140px;
+    width: 100%;
+    height: 272px;
+}
+
+
+.header-content-box {
+   display: flex;
+    
+}
+
+.item1,
+.item2,
+.item3,
+.item4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+
+.item1 h2,
+.item2 h2,
+.item3 h2,
+.item4 h2 {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 19px;
+    color: #fff;
+    
+}
+
+.item1 p,
+.item2 p,
+.item3 p,
+.item4 p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    color: #ebebeb;
+    
+}
+
+.item1 {
+    background: #b71c1c;
+    
+}
+
+.item2 {
+    background: #6a1b9a;
+    
+}
+
+.item3 {
+    background: #303f9f;
+    
+}
+
+.item4 {
+    background: #00695c;
+    
+}
+
+.item1 h2,
+.item3 h2 {
+    padding: 8px 15px;
+}
+
+.item1 p,
+.item3 p {
+    padding: 0 15px 15px 15px;
+}
+
+.item2 h2,
+.item4 h2 {
+    padding: 15px 15px 9px 15px;
+}
+
+.item2 p,
+.item4 p {
+    padding: 0 15px 30px 15px;
+}
+
+.item1-img,
+.item2-img,
+.item3-img,
+.item4-img {
+    width: 100%;
+    display: block;
+    
+}
+
+
+.main-title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 22px;
+    color: #3a3838;
+    text-align: center;
+    padding: 40px;
+}
+
+.main-box {
+    background: #ededed;
+}
+
+.main-right {
+    padding-bottom: 25px;
+}
+
+.main-right-title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 22px;
+    color: #3a3838;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    max-width: 540px;
+    width: 100%;
+    
+}
+
+.main-right-text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    color: #686868;
+    max-width: 540px;
+    width: 100%;
+}
+
+.main-content {
+    display: flex;
+    gap: 30px;
+    
+}
+
+
+
+
+.main-img {
+   display: block;
+   
+    
+}
+
+.footer {
+    background: #3a3838;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-list {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-list-link {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    text-align: right;
+    color: #fff;
+    transition: 300ms;
+}
+
+.footer-list-link:hover {
+    color: #ef4423;
+}
+
+@media (max-width:1140px) {
+    .header-nav,
+    .footer-content {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .main-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width:950px) {
+    .header-pic {
+      background: url(../images/header-content-imgmmm.jpg)no-repeat center; 
+}
+}
+
+@media (max-width:750px) {
+    .header-list,
+    .footer-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-img {
+        width: 100%;
+    }
+}
+
+@media (max-width:550px) {
+    .header-content-box {
+        flex-wrap: wrap;
+    }
+
+    .item-title,
+    .item-text {
+        text-align: center;
+    }
+
+    .main-right-title,
+    .main-right-text {
+        text-align: center;
+    }
+
+    .header-pic {
+        background: url(../images/header-content-imgmmm550.jpg)no-repeat center;
+    }
+
+    
+    .main-right-text {
+        font-size: 12px;
+    }
+
+    .main-right-title,
+    .main-title {
+        font-size: 17px;
+    }
+
+    .item1 p,
+    .item2 p,
+    .item3 p,
+    .item4 p {
+        font-size: 12px;
+    }
+
+    .header-list-link,
+    .footer-list-link {
+        font-size: 15px;
+    }
+
+    .item1 h2,
+    .item2 h2,
+    .item3 h2,
+    .item4 h2 {
+    font-size: 16px;
+}
+}
+
+@media (max-width:400px) {
+    .header-pic {
+        background: url(../images/header-content-imgmmm300.jpg) no-repeat center;
+    }
+
+   
+}
